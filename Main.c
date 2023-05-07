@@ -47,8 +47,22 @@ void start () {
             else
             exit(0);
 }
+
 void rule () {}
-long check_uang() {}
+long check_uang() {
+    long pass;
+    if(ques >= 4 && ques <= 7)
+    pass = uang_skrg[3];
+    else if(ques >= 8 && ques <= 11)
+    pass = uang_skrg[7];
+    else if(ques >= 12 && ques <= 14)
+    pass = uang_skrg[11];
+    else
+    pass = 0;
+    
+    return pass;
+}
+
 void tampil_ques() {}
 void checkpoint() {}
 void won () {}
