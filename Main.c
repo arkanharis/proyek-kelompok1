@@ -26,9 +26,43 @@ typedef struct {
     } User;
     
 void inisial() {}
-void start () {}
+void start () {
+        system("clear");
+            printf("\n\n");
+            printf("\t\t\t\t\t\t\t    ▄▄▄▄▄▄▄ ▄▄   ▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄ \n");
+            printf("\t\t\t\t\t\t\t   █       █  █▄█  █  █ █  █      █\n");
+            printf("\t\t\t\t\t\t\t   █    ▄▄▄█       █  █▄█  █  ▄   █\n");
+            printf("\t\t\t\t\t\t\t   █   █▄▄▄█       █       █ █▄█  █\n");
+            printf("\t\t\t\t\t\t\t   █    ▄▄▄█       █   ▄   █      █\n");
+            printf("\t\t\t\t\t\t\t   █   █▄▄▄█ ██▄██ █  █ █  █  ▄   █\n");
+            printf("\t\t\t\t\t\t\t   █▄▄▄▄▄▄▄█▄█   █▄█▄▄█ █▄▄█▄█ █▄▄█\n");
+            printf("\n\n");
+            printf("\t\t\t\b\bWelcome to Mh Game!\n");
+            printf("\t\t\t\b\bEnter Y to CONTINUE or N (or any other key) to QUIT. YOUR CHOICE -> ");
+            char ch = getchar();
+            if(toupper(ch) == 'Y')
+            {
+                a=1;
+            }
+            else
+            exit(0);
+}
+
 void rule () {}
-long check_uang() {}
+long check_uang() {
+    long pass;
+    if(ques >= 4 && ques <= 7)
+    pass = uang_skrg[3];
+    else if(ques >= 8 && ques <= 11)
+    pass = uang_skrg[7];
+    else if(ques >= 12 && ques <= 14)
+    pass = uang_skrg[11];
+    else
+    pass = 0;
+    
+    return pass;
+}
+
 void tampil_ques() {}
 void checkpoint() {}
 void won () {}
