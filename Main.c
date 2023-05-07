@@ -56,7 +56,8 @@ int main(int banyakArgumen, char *argumen[])
     file_login = fopen("database/login.bin", "ab"); // buka file binary untuk write
     fwrite(&new_user, sizeof(User), 1, file_login); // tulis struct ke file
     fclose(file_login); // tutup file
-    return 0;
+        
+    printf("Registrasi berhasil.\n");
     }
     
 void inisial() {}
