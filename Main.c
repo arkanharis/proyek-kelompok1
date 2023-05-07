@@ -184,6 +184,20 @@ void game_over () {
     char ch = getchar();
     exit(0);
 }
-void sorry () {}
+void sorry () {
+    system("clear");
+    printf("\n\n\n");
+    printf("\t\t\t\t\t  ███████  ██████  ██████  ██████  ██    ██ ██ \n");
+    printf("\t\t\t\t\t  ██      ██    ██ ██   ██ ██   ██  ██  ██  ██ \n");
+    printf("\t\t\t\t\t  ███████ ██    ██ ██████  ██████    ████   ██ \n");
+    printf("\t\t\t\t\t       ██ ██    ██ ██   ██ ██   ██    ██       \n");
+    printf("\t\t\t\t\t  ███████  ██████  ██   ██ ██   ██    ██    ██ \n\n\n");
+    printf("\n\n\n");
+    printf("\t\t\t\t%s, You didn't won any money this time, bad luck maybe. We all know that you deserve better.\n",nama);
+    printf("\t\t\t\tTry again next time. BEST OF LUCK!!\n");
+    printf("\t\t\t\tPRESS any KEY followed by ENTER OR only the ENTER key to QUIT ");
+    char ch = getchar();
+    exit(0);
+}
 int main () {}
 
