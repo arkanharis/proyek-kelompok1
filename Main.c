@@ -262,5 +262,40 @@ int main(int banyakArgumen, char *argumen[])
     User user_input;
     strcpy(user_input.username, argumen[1]);
     strcpy(user_input.password, argumen[2]);
+    
+// LOGIN
+    int login;
+    // Membaca struct dari file
+    User user_database;
+    FILE *file_login;
+    file_login = fopen("database/login.bin", "rb"); // buka file binary untuk read
+
+    // Menghitung jumlah struct yang ada dalam file
+    fseek(file_login, 0, SEEK_END); // Pindah ke akhir file
+    long size = ftell(file_login); // Hitung jumlah byte dalam file
+    int jumlahStruct = size / sizeof(User); // Hitung jumlah struct
+
+    for(int i = 1; i <= jumlahStruct; i++){
+        fread(&user_database, sizeof(User), 1, file_login); // baca struct dari file
+        //mencari username dan password yang cocok dari input user dan database
+        if( (strcmp(user_input.username,user_database.username)==0) && (strcmp(user_input.password, user_database.password)==0) ){
+            login = 1;
+            break;
+        }
+        else{
+            login = 0;
+        }
+    }
+    fclose(file_login);
+
+    // Cek apakah berhasil login
+    if(login == 0){
+        // DISINI KODE GAME NYA NANTI
+        printf("Login Berhasil!\n");
+        return 0;
+    }else{
+        //Pesan Error!
+        return 0;
+    }
 }
 
