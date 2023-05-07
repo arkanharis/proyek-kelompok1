@@ -48,7 +48,29 @@ void start () {
             exit(0);
 }
 
-void rule () {}
+void rule () {
+    printf("\t\t\t\t\tBerikut adalah beberapa aturan dan tips permainan untukmu.\n\n");
+    printf("\t\t\t\t\t\t\tAturan & Intruksi\n");
+    printf("\t\t\t\t\t\t\t\b______________________\n\n");
+    printf("\t1.) Untuk memenangkan HADIAH UTAMA sebesar Rp. 7.000.000, kamu harus menjawab semua soal dengan benar.\n");
+    printf("\t2.) Saat kamu salah dalam menjawab soal (Artinya memilih opsi yang salah), permainanmu akan BERAKHIR.\n");
+    printf("\t3.) Ada 4 titik checkpoint dalam permainan (ditandai dengan tanda [C*] pada dashbor uang (yang terletak di sisi kiri)\n");
+    printf("\t    dari permainan.titik checkpoint berada pada soal ke-4 (40.000), soal ke-8 (640.000), soal ke-12 (1 milliar),\n");
+    printf("\t    dan soal ke-15 (7 milliar).\n");
+    printf("\t4.) Ketika mencapai dari titik checkpoint ini akan memastikan jumlah yang akan dimenangkan bahkan jika kamu tidak dapat \n");
+    printf("\t    mencapai checkpoint berikutnya.\n");
+    printf("\t5.) Posisi saat ini pada dasbor uang ditunjukkan oleh simbol (>>) di sisi kiri dari pelat.\n");
+    printf("\t6.) Kamu dapat keluar dari permainan kapan saja yang kamu inginkan, dengan memasukkan Q pada konsol.\n");
+    printf("\t    Saat kamu keluar, jumlah yang akan kamu bawa bersamamu adalah jumlah yang disebutkan pada checkpoint terakhir.\n");
+    printf("\t7.) Perlu diingat, jika kamu memasukkan KEY apapun selain key yang disebutkan pada poin di atas (Misalnya T,Y...),\n");
+    printf("\t    tidak akan ada efeknya.\n");
+    printf("\t8.) Jika kamu memasukkan beberapa karakter sebagai masukan di terminal, HANYA KARAKTER PERTAMA dari string yang akan \n");
+    printf("\t    diambil sebagai masukan. GOOD LUCK!!!.\n\n");
+    printf("\t\t\t\t\tPress ANY KEY followed by ENTER to Continue.... ");
+    char ch = getchar();
+    getchar();
+    a = 2;
+}
 long check_uang() {
     long pass;
     if(ques >= 4 && ques <= 7)
