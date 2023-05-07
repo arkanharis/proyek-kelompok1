@@ -4,7 +4,7 @@ Repository ini merupakan projek kelompok kami, yaitu membuat permainan Who Wants
 ## Anggota kelompok
 1. 2208107010056 Muhammad Mahathir
 2. 2208107010044 Muhammad Khalid Al Ghifari 
-3. 
+3. 2208107010022 M. Arkan Haris
 4. 2208107010002 Mila Lestari
 5. 
 
