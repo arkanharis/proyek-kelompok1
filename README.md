@@ -12,9 +12,9 @@ Repository ini merupakan projek kelompok kami, yaitu membuat permainan Who Wants
 1. Buka terminal atau cmd
 2. Arahkan direktori pada console ke direktori file ini
 3. Lakukan compile file Main.c dengan compiler (*dalam pembuatan menggunakan gcc)
-   ```$ gcc Main.c -o Main```
+   <br />```$ gcc Main.c -o Main```
 4. Lakukan registrasi terlebih dahulu
-   ```$ ./Main```
+   <br />```$ ./Main```
 5. Jalankan aplikasi beserta login
-   ```$ ./Main [username] [password]```
+   <br />```$ ./Main [username] [password]```
 6. Setelah berhasil login, ikuti aturan permainan yang terdapat dalam program tersebut
