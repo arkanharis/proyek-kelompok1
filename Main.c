@@ -257,3 +257,10 @@ int main(int banyakArgumen, char *argumen[])
     return 0;
     }
 
+// MENGAMBIL INPUT USER DARI CLA
+
+    User user_input;
+    strcpy(user_input.username, argumen[1]);
+    strcpy(user_input.password, argumen[2]);
+}
+
