@@ -298,4 +298,57 @@ int main(int banyakArgumen, char *argumen[])
         return 0;
     }
 }
-
+while(a != 1){start();}
+while(a != 2){rule();} 
+        while(a != 3) { 
+            while(ques != 15) {
+                tampil_ques();
+                opsi = toupper(opsi); 
+                //Opsi pilihan jawaban
+                if(opsi == 'A' || opsi == 'B' || opsi == 'C' || opsi == 'D') {
+                    if(set[ques].solusi == opsi) {
+                        //Jika jawaban benar akan menampilkan 'CORRECT ANSWER!!'
+                        printf("\t\t\t  CORRECT ANSWER!!!! (MONEY WON: %lu)\n\t\t\t  Press ENTER to CONTINUE..", uang_skrg[ques]);
+                        char ch = getchar();
+                        getchar();
+                        if(ques == 14) {
+                            won();
+                        }
+                        if(ques == 3 || ques == 7 || ques == 11) {
+                            checkpoint();
+                        }
+                    }
+                    else {
+                        //Jika jawaban salah akan menampilkan 'WRONG ANSWER'
+                        printf("\t\t\t  WRONG ANSWER (Correct opsi: %c)\n\t\t\t  Press ENTER to CONTINUE..", set[ques].solusi);
+                        char ch = getchar();
+                        getchar();
+                        if(check_uang() == 0) {
+                            sorry();
+                        }
+                        else {
+                            game_over();
+                        }
+                    }
+                    update[ques+1]='>';
+                }
+                else if(opsi == 'Q') {
+                    char ch;
+                    printf("\t\t\t  Are you sure? [Y/N] ");
+                    scanf(" %c", &ch);
+                    ch = toupper(ch);
+                    if(ch == 'Y') {
+                        game_over();
+                    }
+                    else {
+                        continue;
+                    }
+                }
+                else {
+                    continue;
+                }
+                ques++; 
+            }
+        }
+    }
+    return 0;
