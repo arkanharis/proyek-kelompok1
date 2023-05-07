@@ -379,7 +379,7 @@ int main(int banyakArgumen, char *argumen[])
     fseek(file_login, 0, SEEK_END); // Pindah ke akhir file
     long size = ftell(file_login); // Hitung jumlah byte dalam file
     int jumlahStruct = size / sizeof(User); // Hitung jumlah struct
-
+    fseek(file_login, 0, SEEK_SET);
     for(int i = 1; i <= jumlahStruct; i++){
         fread(&user_database, sizeof(User), 1, file_login); // baca struct dari file
         //mencari username dan password yang cocok dari input user dan database
@@ -394,7 +394,7 @@ int main(int banyakArgumen, char *argumen[])
     fclose(file_login);
 
     // Cek apakah berhasil login
-    if(login == 0){
+    if(login == 1){
         while(a != 1){start();}
         while(a != 2){rule();} 
         while(a != 3) { 
