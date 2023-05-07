@@ -2,8 +2,7 @@
 #include<string.h> 
 #include<ctype.h> 
 #include<stdlib.h>
-
-char nama[20]; 
+ 
 int ques = 0; 
 int a = 0; 
 long uang_skrg[] = {5000, 10000, 20000, 40000, 80000, 160000, 320000, 640000, 1250000, 2500000, 5000000, 10000000, 30000000, 50000000, 70000000};
@@ -128,7 +127,7 @@ void tampil_ques() {
     printf(" \t\t\t\t\t\t\t░█▀▀░█░▀░█░█▀▀█░█▄▄█\n");
     printf(" \t\t\t\t\t\t\t░▀▀▀░▀░░▒▀░▀░░▀░▀░░▀\n");
     printf(" \n");
-    printf(" \t\t\t\t\t    %s, Question %lu is now on your computer Screen:\n", nama, uang_skrg[ques]);
+    printf(" \t\t\t\t\t\t    Question %lu is now on your computer Screen:\n", uang_skrg[ques]);
     printf("   _______________\n");
     printf("%c%c│   7 milliar   │[C*]\t  /‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\\ \n", update[14], update[14]);
     printf("%c%c│   5 milliar   │    \t\t-( Q.%d> %s )-\n",update[13],update[13],(ques+1),quest);
@@ -185,7 +184,7 @@ void won () {
     printf("\t\t\t\t\t     ██    ██    ██ ██    ██     ██ ███ ██ ██    ██ ██  ██ ██  \n");
     printf("\t\t\t\t\t     ██     ██████   ██████       ███ ███   ██████  ██   ████ ██\n\n\n"); 
     printf("\t\t\t\t\t  ALL OF THE 7 billion PRIZE MONEY NOW BELONGS TO YOU!!\n");
-    printf("\t\t\t\t\t  %s, YOU ARE NOW A bilionaire!!\n\n\n\n", nama);
+    printf("\t\t\t\t\t  Congrats, YOU ARE NOW A bilionaire!!\n\n\n\n");
     printf("\t\t\t\t\t  PRESS ENTER / ANY KEY FOLLOWED BY ENTER TO QUIT ");
     char ch = getchar();
     exit(0);
@@ -215,7 +214,7 @@ void sorry () {
     printf("\t\t\t\t\t       ██ ██    ██ ██   ██ ██   ██    ██       \n");
     printf("\t\t\t\t\t  ███████  ██████  ██   ██ ██   ██    ██    ██ \n\n\n");
     printf("\n\n\n");
-    printf("\t\t\t\t%s, You didn't won any money this time, bad luck maybe. We all know that you deserve better.\n",nama);
+    printf("\t\t\t\t\tYou didn't won any money this time, bad luck maybe. We all know that you deserve better.\n");
     printf("\t\t\t\tTry again next time. BEST OF LUCK!!\n");
     printf("\t\t\t\tPRESS any KEY followed by ENTER OR only the ENTER key to QUIT ");
     char ch = getchar();
