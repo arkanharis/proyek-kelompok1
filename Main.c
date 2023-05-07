@@ -450,7 +450,8 @@ int main(int banyakArgumen, char *argumen[])
         return 0;
     }else{
         //Pesan Error!
-     printf("Login Failed");
+     printf("Login Failed\n");
+     printf("Username atau Password yang Anda masukkan salah");
         return 0;
     }
 }
