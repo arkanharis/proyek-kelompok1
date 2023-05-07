@@ -290,16 +290,8 @@ int main(int banyakArgumen, char *argumen[])
 
     // Cek apakah berhasil login
     if(login == 0){
-        // DISINI KODE GAME NYA NANTI
-        printf("Login Berhasil!\n");
-        return 0;
-    }else{
-        //Pesan Error!
-        return 0;
-    }
-}
-while(a != 1){start();}
-while(a != 2){rule();} 
+        while(a != 1){start();}
+        while(a != 2){rule();} 
         while(a != 3) { 
             while(ques != 15) {
                 tampil_ques();
@@ -350,5 +342,11 @@ while(a != 2){rule();}
                 ques++; 
             }
         }
+        return 0;
+    }else{
+        //Pesan Error!
+        return 0;
     }
-    return 0;
+}
+
+
