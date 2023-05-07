@@ -8,8 +8,15 @@ Repository ini merupakan projek kelompok kami, yaitu membuat permainan Who Wants
 4. 2208107010002 Mila Lestari
 5. 
 
-## Petunjuk permainan
-1. Gunakan main.c dan login.bin yang ada
-2. Lakukan compile dengan menggunakan gcc
-3. Jalankan aplikasi dengan menggunakan argumen username dan password.
-4. Ikuti aturan permainan yang terdapat dalam program tersebut
+## Petunjuk memulai permainan
+1. Buka terminal atau cmd
+2. Arahkan direktori pada console ke direktori file ini
+3. Lakukan compile file Main.c dengan compiler (*dalam pembuatan menggunakan gcc)
+   Perintah:
+   $ gcc Main.c -o Main
+4. Lakukan registrasi terlebih dahulu
+   Perintah:
+   $ ./Main
+5. Jalankan aplikasi beserta login
+   $ ./Main [username] [password]
+6. Setelah berhasil login, ikuti aturan permainan yang terdapat dalam program tersebut
