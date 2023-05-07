@@ -63,7 +63,75 @@ long check_uang() {
     return pass;
 }
 
-void tampil_ques() {}
+void tampil_ques() {
+    system("clear"); 
+    Inisial();
+    int l;
+    char ch = ' ';
+    char quest[100] ;
+    char opA[35] ;
+    char opB[35] ;
+    char opC[35] ; 
+    char opD[35] ;
+
+    strcpy(quest, set[ques].soal);
+    strcpy(opA, set[ques].a);
+    strcpy(opB, set[ques].b);
+    strcpy(opC, set[ques].c);
+    strcpy(opD, set[ques].d);
+
+    l = strlen(opA);
+    for(int i=1; i<(28-l); i++)
+    {
+       strncat(opA, &ch, 1); 
+    }
+    l = strlen(opB);
+    for(int i=1; i<(28-l); i++)
+    {
+       strncat(opB, &ch, 1); 
+    }
+    l = strlen(opC);
+    for(int i=1; i<(28-l); i++)
+    {
+       strncat(opC, &ch, 1); 
+    }
+    l = strlen(opD);
+    for(int i=1; i<(28-l); i++)
+    {
+       strncat(opD, &ch, 1); 
+    }
+    
+    printf(" \n\n");
+    printf(" \t\t\t\t\t\t\t░█▀▀░█▀▄▀█░█░░░░█▀▀▄\n");
+    printf(" \t\t\t\t\t\t\t░█▀▀░█░▀░█░█▀▀█░█▄▄█\n");
+    printf(" \t\t\t\t\t\t\t░▀▀▀░▀░░▒▀░▀░░▀░▀░░▀\n");
+    printf(" \n");
+    printf(" \t\t\t\t\t    %s, Question %lu is now on your computer Screen:\n", nama, uang_skrg[ques]);
+    printf("   _____\n");
+    printf("%c%c│   7 milliar   │[C*]\t  /‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\\ \n", update[14], update[14]);
+    printf("%c%c│   5 milliar   │    \t\t-( Q.%d> %s )-\n",update[13],update[13],(ques+1),quest);
+    printf("%c%c│   3 milliar   │    \t\t  \\_________________________________/\n",update[12], update[12]);
+    printf("%c%c│   1 milliar   │[C*]\n",update[11], update[11]);
+    printf("%c%c│   5.000.000   │\n",update[10], update[10]);
+    printf("%c%c│   2.500.000   │\n",update[9], update[9]);
+    printf("%c%c│   1.250.000   │\t\t  /‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\\                                /‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\\ \n", update[8], update[8]);
+    printf("%c%c│    640.000    │[C*]\t\t-( A.> %s)-------------------------------( B.> %s)-\n",update[7],update[7],opA,opB);
+    printf("%c%c│    320.000    │    \t\t  \\___________/                                 \\___________/\n", update[6], update[6]);
+    printf("%c%c│    160.000    │\n",update[5], update[5]);
+    printf("%c%c│     80.000    │    \t\t  /‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\\                                /‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\\ \n", update[4], update[4]);
+    printf("%c%c│     40.000    │[C*]\t\t-( C.> %s)-------------------------------( D.> %s)-\n",update[3],update[3],opC,opD);
+    printf("%c%c│     20.000    │    \t\t  \\___________/                                 \\___________/\n", update[2], update[2]);
+    printf("%c%c│     10.000    │\n",update[1], update[1]);
+    printf("%c%c│      5.000    │\n", update[0], update[0]);
+    printf("   ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾        ENTER Q if you want to QUIT. If you QUIT now, you can take IDR %lu with you.\n\n", check_uang());
+    printf(" \t\t\t  ENTER your CHOICE : ");
+    char str[25];
+    scanf("%s", str);
+    opsi = str[0];
+    
+    a = 3; 
+}
+
 void checkpoint() {}
 void won () {}
 void game_over () {}
