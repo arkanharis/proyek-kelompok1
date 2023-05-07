@@ -275,4 +275,18 @@ int main(int banyakArgumen, char *argumen[])
             printf("\n--------\nPETUNJUK\n--------\nSilahkan login dengan perintah:\n./Main [username] [password]\n\n");
             return 0;
         }
+        
+// REGISTRASI
+    User new_user;
 
+    printf("\nMasukkan username: ");
+    scanf("%s", new_user.username);
+    printf("Masukkan password: ");
+    scanf("%s", new_user.password);
+
+    FILE *file_login;
+    file_login = fopen("database/login.bin", "ab"); // buka file binary untuk write
+    fwrite(&new_user, sizeof(User), 1, file_login); // tulis struct ke file
+    fclose(file_login); // tutup file
+    return 0;
+    }
