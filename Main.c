@@ -107,20 +107,20 @@ void tampil_ques() {
     printf(" \t\t\t\t\t\t\t░▀▀▀░▀░░▒▀░▀░░▀░▀░░▀\n");
     printf(" \n");
     printf(" \t\t\t\t\t    %s, Question %lu is now on your computer Screen:\n", nama, uang_skrg[ques]);
-    printf("   _____\n");
+    printf("   _______________\n");
     printf("%c%c│   7 milliar   │[C*]\t  /‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\\ \n", update[14], update[14]);
     printf("%c%c│   5 milliar   │    \t\t-( Q.%d> %s )-\n",update[13],update[13],(ques+1),quest);
-    printf("%c%c│   3 milliar   │    \t\t  \\_________________________________/\n",update[12], update[12]);
+    printf("%c%c│   3 milliar   │    \t\t  \\_______________________________________________________________________________________________/\n",update[12], update[12]);
     printf("%c%c│   1 milliar   │[C*]\n",update[11], update[11]);
     printf("%c%c│   5.000.000   │\n",update[10], update[10]);
     printf("%c%c│   2.500.000   │\n",update[9], update[9]);
     printf("%c%c│   1.250.000   │\t\t  /‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\\                                /‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\\ \n", update[8], update[8]);
     printf("%c%c│    640.000    │[C*]\t\t-( A.> %s)-------------------------------( B.> %s)-\n",update[7],update[7],opA,opB);
-    printf("%c%c│    320.000    │    \t\t  \\___________/                                 \\___________/\n", update[6], update[6]);
+    printf("%c%c│    320.000    │    \t\t  \\______________________________/                                 \\______________________________/\n", update[6], update[6]);
     printf("%c%c│    160.000    │\n",update[5], update[5]);
     printf("%c%c│     80.000    │    \t\t  /‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\\                                /‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\\ \n", update[4], update[4]);
     printf("%c%c│     40.000    │[C*]\t\t-( C.> %s)-------------------------------( D.> %s)-\n",update[3],update[3],opC,opD);
-    printf("%c%c│     20.000    │    \t\t  \\___________/                                 \\___________/\n", update[2], update[2]);
+    printf("%c%c│     20.000    │    \t\t  \\______________________________/                                 \\______________________________/\n", update[2], update[2]);
     printf("%c%c│     10.000    │\n",update[1], update[1]);
     printf("%c%c│      5.000    │\n", update[0], update[0]);
     printf("   ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾        ENTER Q if you want to QUIT. If you QUIT now, you can take IDR %lu with you.\n\n", check_uang());
@@ -132,7 +132,28 @@ void tampil_ques() {
     a = 3; 
 }
 
-void checkpoint() {}
+void checkpoint() {
+    system("clear"); 
+    int No_ch = (ques == 3) ? 1 : ((ques == 7) ? 2 : 3); 
+    int Nex_Ch = (ques == 3) ? 8 : ((ques == 7) ? 12 : 15); 
+    int af_ch = (ques == 3) ? 4 : ((ques == 7) ? 4 : 3); 
+    long last_amount = (ques == 3) ? 40000 : ((ques == 7) ? 640000 : 10000000); 
+    printf("\n\n\n");
+    printf("\t\t\t\t\t   ██████  ██████  ███    ██  ██████  ██████   █████  ████████ ███████ ██\n");
+    printf("\t\t\t\t\t  ██      ██    ██ ████   ██ ██       ██   ██ ██   ██    ██    ██      ██\n");
+    printf("\t\t\t\t\t  ██      ██    ██ ██ ██  ██ ██   ███ ██████  ███████    ██    ███████ ██\n");
+    printf("\t\t\t\t\t  ██      ██    ██ ██  ██ ██ ██    ██ ██   ██ ██   ██    ██         ██   \n");
+    printf("\t\t\t\t\t   ██████  ██████  ██   ████  ██████  ██   ██ ██   ██    ██    ███████ ██\n");
+    printf("\t\t\t\t\t    __________________________________________________________________\n");
+    printf("\t\t\t\t\t   /_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/\n\n\n");
+    printf("\t\t\t\t\t\t\t\t   CHECKPOINT ACHIEVED\n\n\n");
+    printf("\t\t\t\t\t  CHECKPOINT NUMBER : %d\n\n", No_ch);
+    printf("\t\t\t\t\t  CONFIRMED AMOUNT TO BE WON : IDR %lu\n\n", last_amount);
+    printf("\t\t\t\t\t  NEXT CHECKPOINT AT : Ques %d\n\n", Nex_Ch);
+    printf("\t\t\t\t\t  NEXT CHECKPOINT AFTER IS AFTER %d soalS\n\n\n", af_ch);
+    printf("\t\t\t\t\t  Press ENTER to CONTINUE THE GAME");
+    char ch = getchar();
+}
 void won () {}
 void game_over () {}
 void sorry () {}
