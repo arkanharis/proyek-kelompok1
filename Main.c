@@ -222,23 +222,4 @@ void sorry () {
     exit(0);
 }
 
-int main(int banyakArgumen, char *argumen[])
-{   
-
-    // Jika jumlah argumen salah maka tampilkan error
-    if(banyakArgumen != 3 && banyakArgumen != 1){  
-        printf("\n===============\nPerintah Salah!\n===============\n");
-        printf("\n--------\nPETUNJUK\n--------\n\nRegistrasi:\n./Main\n\nLogin:\n./Main [username] [password]\n\n");
-        return EXIT_FAILURE;
-    }
-
-    //Jika Menjalankan tanpa argumen lain (hanya './Main') akan di arah kan untuk registrasi
-    else if(banyakArgumen == 1){
-        printf("\nAnda berada di halaman Registrasi\n\nPilih:\n[0] Ke Halaman Login\n[1] Lanjut Registrasi\n: ");
-        int pilih;
-        scanf("%d", &pilih);
-        if(pilih==0){
-            printf("\n--------\nPETUNJUK\n--------\nSilahkan login dengan perintah:\n./Main [username] [password]\n\n");
-            return 0;
-        }
-}        
+int main() {}
