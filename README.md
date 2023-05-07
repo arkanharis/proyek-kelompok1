@@ -1,5 +1,5 @@
 # Project-Kelompok1
-Repository ini merupakan projek kelompok kami, yaitu membuat permainan Who Wants To Be a Millionaire. Link Video Demo dan Penjelasan YouTube: 
+Repository ini merupakan projek kelompok kami, yaitu membuat permainan Who Wants To Be a Millionaire. Link YouTube Penjelasan dan Video Demo : https://youtu.be/SZ-u3NNZJdY
 
 ## Anggota kelompok
 1. 2208107010056 Muhammad Mahathir
