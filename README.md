@@ -6,7 +6,7 @@ Repository ini merupakan projek kelompok kami, yaitu membuat permainan Who Wants
 2. 2208107010044 Muhammad Khalid Al Ghifari 
 3. 2208107010022 M. Arkan Haris
 4. 2208107010002 Mila Lestari
-5. 
+5. 2208107010054 Widya Nurul Sukma
 
 ## Petunjuk memulai permainan
 1. Buka terminal atau cmd
