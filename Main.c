@@ -270,5 +270,21 @@ int main(int banyakArgumen, char *argumen[])
     FILE *file_login;
     file_login = fopen("database/login.bin", "rb"); // buka file binary untuk read
 
+    // Menghitung jumlah struct yang ada dalam file
+    fseek(file_login, 0, SEEK_END); // Pindah ke akhir file
+    long size = ftell(file_login); // Hitung jumlah byte dalam file
+    int jumlahStruct = size / sizeof(User); // Hitung jumlah struct
+
+    for(int i = 1; i <= jumlahStruct; i++){
+        fread(&user_database, sizeof(User), 1, file_login); // baca struct dari file
+        if( (strcmp(user_input.username,user_database.username)==0) && (strcmp(user_input.password, user_database.password)==0) ){
+            login = 1;
+            break;
+        }
+        else{
+            login = 0;
+        }
+    }
+    fclose(file_login);
 }
 
