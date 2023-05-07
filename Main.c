@@ -277,6 +277,7 @@ int main(int banyakArgumen, char *argumen[])
 
     for(int i = 1; i <= jumlahStruct; i++){
         fread(&user_database, sizeof(User), 1, file_login); // baca struct dari file
+        //mencari username dan password yang cocok dari input user dan database
         if( (strcmp(user_input.username,user_database.username)==0) && (strcmp(user_input.password, user_database.password)==0) ){
             login = 1;
             break;
@@ -286,5 +287,15 @@ int main(int banyakArgumen, char *argumen[])
         }
     }
     fclose(file_login);
+
+    // Cek apakah berhasil login
+    if(login == 0){
+        // DISINI KODE GAME NYA NANTI
+        printf("Login Berhasil!\n");
+        return 0;
+    }else{
+        //Pesan Error!
+        return 0;
+    }
 }
 
