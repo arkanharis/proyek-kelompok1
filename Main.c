@@ -24,7 +24,113 @@ typedef struct {
     char password[30];
     } User;
     
-void inisial() {}
+void Inisial() {
+    strcpy(set[0].soal, "Apa nama ilmu yang mempelajari tentang burung?");
+    strcpy(set[0].a, "Ornitologi");
+    strcpy(set[0].b, "Herpetologi");
+    strcpy(set[0].c, "Entomologi");
+    strcpy(set[0].d, "Mammalogi");
+    set[0].solusi = 'A';
+    
+    strcpy(set[1].soal, "Apa nama kapal yang digunakan oleh Christopher Columbus saat menemukan Amerika?");
+    strcpy(set[1].a, "Santa Maria");
+    strcpy(set[1].b, "Nina");
+    strcpy(set[1].c, "Pinta");
+    strcpy(set[1].d, "Victoria");
+    set[1].solusi = 'A';
+
+    strcpy(set[2].soal, "Apa nama perusahaan pembuat kamera terkenal dari Jerman?");
+    strcpy(set[2].a, "Nikon");
+    strcpy(set[2].b, "Canon");
+    strcpy(set[2].c, "Leica");
+    strcpy(set[2].d, "Sony");
+    set[2].solusi = 'C';
+
+    strcpy(set[3].soal, "Siapakah pelukis terkenal yang melukis Mona Lisa?");
+    strcpy(set[3].a, "Vincent van Gogh");
+    strcpy(set[3].b, "Pablo Picasso");
+    strcpy(set[3].c, "Leonardo da Vinci");
+    strcpy(set[3].d, "Claude Monet");
+    set[3].solusi = 'C';
+
+    strcpy(set[4].soal, "Siapa pemain basket legendaris yang dijuluki 'Black Mamba'?");
+    strcpy(set[4].a, "Shaquille O'Neal");
+    strcpy(set[4].b, "LeBron James");
+    strcpy(set[4].c, "Kobe Bryant");
+    strcpy(set[4].d, "Michael Jordan");
+    set[4].solusi = 'C';
+
+    strcpy(set[5].soal, "Siapa penulis novel 'Harry Potter'?");
+    strcpy(set[5].a, "Stephen King");
+    strcpy(set[5].b, "J.K. Rowling");
+    strcpy(set[5].c, "George R.R. Martin");
+    strcpy(set[5].d, "Dan Brown");
+    set[5].solusi = 'B';
+
+    strcpy(set[6].soal, "Apa nama tokoh utama dalam film 'Titanic'?");
+    strcpy(set[6].a, "Rose");
+    strcpy(set[6].b, "Tom");
+    strcpy(set[6].c, "Kate");
+    strcpy(set[6].d, "Jack");
+    set[6].solusi = 'D';
+
+    strcpy(set[7].soal, "Siapakah presiden ketiga Republik Indonesia?");
+    strcpy(set[7].a, "Abdurrahman Wahid");
+    strcpy(set[7].b, "Soeharto");
+    strcpy(set[7].c, "B.J. Habibie");
+    strcpy(set[7].d, "Susilo Bambang Yudhoyono");
+    set[7].solusi = 'C';
+
+    strcpy(set[8].soal, "Apa nama planet terbesar di tata surya kita?");
+    strcpy(set[8].a, "Saturnus");
+    strcpy(set[8].b, "Jupiter");
+    strcpy(set[8].c, "Uranus");
+    strcpy(set[8].d, "Neptunus");
+    set[8].solusi = 'B';
+
+    strcpy(set[9].soal, "Siapa tokoh terkenal dalam mitologi Mesir kuno yang berkepala anjing?");
+    strcpy(set[9].a, "Horus");
+    strcpy(set[9].b, "Ra");
+    strcpy(set[9].c, "Osiris");
+    strcpy(set[9].d, "Anubis");
+    set[9].solusi = 'D';
+
+    strcpy(set[10].soal, "Apa nama senjata tradisional yang berasal dari Jepang dan terdiri dari pedang panjang dan pisau kecil??");
+    strcpy(set[10].a, "Wakizashi");
+    strcpy(set[10].b, "Katana");
+    strcpy(set[10].c, "Tanto");
+    strcpy(set[10].d, "Nodachi");
+    set[10].solusi = 'B';
+
+    strcpy(set[11].soal, "Setiap berapa tahun bulan Februari memiliki 29 hari?");
+    strcpy(set[11].a, "1");
+    strcpy(set[11].b, "2");
+    strcpy(set[11].c, "3");
+    strcpy(set[11].d, "4");
+    set[11].solusi = 'D';
+
+    strcpy(set[12].soal, "Apa nama ibu kota negara Spanyol?");
+    strcpy(set[12].a, "Barcelona");
+    strcpy(set[12].b, "Sevilla");
+    strcpy(set[12].c, "Madrid");
+    strcpy(set[12].d, "Valencia");
+    set[12].solusi = 'C';
+
+    strcpy(set[13].soal, "Siapa nama penulis lagu 'Bohemian Rhapsody' dari band Queen?");
+    strcpy(set[13].a, "Brian May");
+    strcpy(set[13].b, "John Deacon");
+    strcpy(set[13].c, "Freddie Mercury");
+    strcpy(set[13].d, "Roger Taylor");
+    set[13].solusi = 'C';
+
+    strcpy(set[14].soal, "Berapa hasil 1+1x0?");
+    strcpy(set[14].a, "0");
+    strcpy(set[14].b, "1");
+    strcpy(set[14].c, "2");
+    strcpy(set[14].d, "Tidak ada jawaban");
+    set[14].solusi = 'B';
+
+}
 void start () {
         system("clear");
             printf("\n\n");
