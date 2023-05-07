@@ -168,7 +168,22 @@ void won () {
     char ch = getchar();
     exit(0);
 }
-void game_over () {}
+void game_over () {
+    system("clear");
+    printf("\n\n\n");
+    printf("\t\t\t\t\t   ██████   █████  ███    ███ ███████      ██████  ██    ██ ███████ ██████  \n");
+    printf("\t\t\t\t\t  ██       ██   ██ ████  ████ ██          ██    ██ ██    ██ ██      ██   ██ \n");
+    printf("\t\t\t\t\t  ██   ███ ███████ ██ ████ ██ █████       ██    ██ ██    ██ █████   ██████  \n");
+    printf("\t\t\t\t\t  ██    ██ ██   ██ ██  ██  ██ ██          ██    ██  ██  ██  ██      ██   ██ \n");
+    printf("\t\t\t\t\t   ██████  ██   ██ ██      ██ ███████      ██████    ████   ███████ ██   ██ \n\n\n");
+    printf("\t\t\t\t\t\t\t\t\t GAME STATS\n\n");
+    printf("\t\t\t\t\t  FINAL AMOUNT WON (WHICH YOU CAN TAKE HOME): IDR %lu\n", check_uang());
+    printf("\t\t\t\t\t  LAST soal REACHED: %d\n", (ques+1));
+    printf("\t\t\t\t\t  AMOUNT IN LAST soal: IDR %lu\n", uang_skrg[ques]);
+    printf("\t\t\t\t\t  PRESS ENTER TO QUIT ");
+    char ch = getchar();
+    exit(0);
+}
 void sorry () {}
 int main () {}
 
