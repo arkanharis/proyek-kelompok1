@@ -154,7 +154,20 @@ void checkpoint() {
     printf("\t\t\t\t\t  Press ENTER to CONTINUE THE GAME");
     char ch = getchar();
 }
-void won () {}
+void won () {
+    system("clear");
+    printf("\n\n\n");
+    printf("\t\t\t\t\t  ██    ██  ██████  ██    ██     ██     ██  ██████  ███    ██ ██\n"); 
+    printf("\t\t\t\t\t   ██  ██  ██    ██ ██    ██     ██     ██ ██    ██ ████   ██ ██\n"); 
+    printf("\t\t\t\t\t    ████   ██    ██ ██    ██     ██  █  ██ ██    ██ ██ ██  ██ ██\n"); 
+    printf("\t\t\t\t\t     ██    ██    ██ ██    ██     ██ ███ ██ ██    ██ ██  ██ ██  \n");
+    printf("\t\t\t\t\t     ██     ██████   ██████       ███ ███   ██████  ██   ████ ██\n\n\n"); 
+    printf("\t\t\t\t\t  ALL OF THE 7 billion PRIZE MONEY NOW BELONGS TO YOU!!\n");
+    printf("\t\t\t\t\t  %s, YOU ARE NOW A bilionaire!!\n\n\n\n", nama);
+    printf("\t\t\t\t\t  PRESS ENTER / ANY KEY FOLLOWED BY ENTER TO QUIT ");
+    char ch = getchar();
+    exit(0);
+}
 void game_over () {}
 void sorry () {}
 int main () {}
