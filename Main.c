@@ -262,5 +262,13 @@ int main(int banyakArgumen, char *argumen[])
     User user_input;
     strcpy(user_input.username, argumen[1]);
     strcpy(user_input.password, argumen[2]);
+    
+// LOGIN
+    int login;
+    // Membaca struct dari file
+    User user_database;
+    FILE *file_login;
+    file_login = fopen("database/login.bin", "rb"); // buka file binary untuk read
+
 }
 
